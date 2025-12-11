@@ -346,11 +346,13 @@ body{
 .techs {
     display: flex;
     gap: 10px;
+    
 }
 
 .techs img {
     width: 28px;
     height: 28px;
+    width: 40px;
 }
 
 .projectHover {
@@ -379,14 +381,87 @@ body{
 
 .btn-more {
     background: #0cc0df;
-    padding: 10px 20px;
-    border-radius: 25px;
+    padding: 6px 12px;
+    border-radius: 20px;
     color: #fff;
     font-weight: bold;
     text-decoration: none;
     transition: background .3s;
+    font-size: 14px;           
+    max-width: 90px;        
+    width: 50%;               
+    box-sizing: border-box;   
+    display: block;           
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .btn-more:hover {
     background: #0babc7;
+}
+
+                                            /*Section CONTATOS*/
+
+#contato {
+    margin-top: 150px;
+}
+
+.contacts {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contacts h2 {
+    font-size: 3.2rem;
+    margin-bottom: 40px;
+    color: #d7f9ff;
+    font-weight: bold;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}   
+
+.icon {
+    width: 200px;
+    text-align: center;
+}
+
+.icon .box {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px;
+    background-color: #222;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.icon .box img {
+    width: 80px;
+    height: 70px;
+}
+
+.icon:hover .box {
+    transform: scale(1.1);
+}
+
+.icon p {
+    margin: 4px 0;
+    font-size: 16px;
+    color: #ccc;
+    font-weight: bold;
+}
+
+.icon a {
+    text-decoration: none;
+}
+
+.icon a:hover p {
+    color: #0cc0df;
 }

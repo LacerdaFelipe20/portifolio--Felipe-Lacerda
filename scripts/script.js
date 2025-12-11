@@ -13,7 +13,6 @@ document.querySelectorAll('.menu-overlay a').forEach(link => {
     });
 });
 
-// Fecha o menu ao clicar fora dele
 document.addEventListener('click', (e) => {
     const isClickInsideMenu = menu.contains(e.target);
     const isClickOnToggle = toggle.contains(e.target);
@@ -23,7 +22,6 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// Funções de modal (mantidas do seu código original)
 function abrirModal() {
     document.getElementById("modalProjeto").style.display = "block";
 }
