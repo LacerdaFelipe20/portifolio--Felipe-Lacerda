@@ -1,12 +1,10 @@
 const toggle = document.getElementById('menu-toggle');
 const menu = document.getElementById('menu');
 
-// Abre/fecha o menu ao clicar no botão ☰
 toggle.addEventListener('click', () => {
     menu.classList.toggle('active');
 });
 
-// Fecha o menu ao clicar em qualquer link dentro dele
 document.querySelectorAll('.menu-overlay a').forEach(link => {
     link.addEventListener('click', () => {
     menu.classList.remove('active');

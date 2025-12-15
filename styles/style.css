@@ -360,13 +360,12 @@ body{
     bottom: -80px;
     left: 0;
     width: 100%;
-    height: 80px;
     background: #0c0c0c;
     border-top: 3px solid #0cc0df; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 10px 20px;
     transition: bottom .3s ease;
 }
 
@@ -379,7 +378,19 @@ body{
     font-size: 15px;
 }
 
-.btn-more {
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+.projectHover .btn-group {
+    display: flex;
+    gap: 10px; 
+}
+
+
+.btn-more,
+.boton {
     background: #0cc0df;
     padding: 6px 12px;
     border-radius: 20px;
@@ -387,18 +398,16 @@ body{
     font-weight: bold;
     text-decoration: none;
     transition: background .3s;
-    font-size: 14px;           
-    max-width: 90px;        
-    width: 50%;               
-    box-sizing: border-box;   
-    display: block;           
-    margin-left: auto;
-    margin-right: 0;
+    font-size: 14px;
+    box-sizing: border-box;
+    display: inline-block;
 }
 
-.btn-more:hover {
+.btn-more:hover,
+.boton:hover {
     background: #0babc7;
 }
+
 
                                             /*Section CONTATOS*/
 
